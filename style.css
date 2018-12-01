@@ -2,7 +2,11 @@ body {
     background-size: cover;
     font-family: Lato;
     color: black;
-    height: 100%;
+    overflow-x:hidden;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 .jumbotron {
@@ -24,9 +28,6 @@ h1 {
     color: black;
 }
 
-html {
-    height: 100%;
-}
 
 hr {
     width: 400px;
@@ -51,3 +52,17 @@ hr {
     width:100%;
     position:absolute;
     }
+
+    @media (min-width: 360px)  and (max-width: 729px)  { 
+
+        .jumbotron {
+            width: 1px; /* you could actually just change it to 0px */
+            margin: auto;
+        }
+
+        .display-4 {
+            padding-right: 130px;
+            color: red;
+        }
+
+     }
